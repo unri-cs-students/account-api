@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS account (
+    `account_id` VARCHAR(255) NOT NULL UNIQUE,
+    `full_name` VARCHAR(30) NOT NULL,
+    `email` VARCHAR(50) NOT NULL,
+    `phone_number` VARCHAR(12) NOT NULL,
+    `username` VARCHAR(30) NOT NULL UNIQUE,
+    `password` VARCHAR(255) NOT NULL,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`account_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
